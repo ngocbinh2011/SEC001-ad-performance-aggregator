@@ -64,3 +64,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+ad_data.csv
