@@ -106,7 +106,7 @@ java -cp target/ad-performance-aggregator-1.0-SNAPSHOT.jar \
   com.presentation.Main --input ad_data.csv --output results/
 ```
 
-### 4. Compare with correct result
+### 4. Compare with correct result (only for ad_data.csv)
 ```bash
 diff --strip-trailing-cr correct_results/top10_ctr.csv <output_dir>/top10_ctr.csv
 ```
