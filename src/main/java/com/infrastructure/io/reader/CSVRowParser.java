@@ -57,7 +57,7 @@ public class CSVRowParser {
 				switch (field) {
 					case 0:
 						if (fieldStart >= fieldEnd) return;
-						campaignId = row.substring(fieldStart, fieldEnd);
+						campaignId = row.substring(fieldStart, fieldEnd).intern();
 						break;
 					
 					case 2:

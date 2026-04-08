@@ -1,0 +1,805 @@
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkBufferReader
+
+# Run progress: 0.00% complete, ETA 00:13:20
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+# Run progress: 5.00% complete, ETA 00:19:24
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkBufferReader":
+  ≈ 10⁻⁴ ops/ms
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith16Core
+
+# Run progress: 10.00% complete, ETA 00:19:49
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+# Run progress: 15.00% complete, ETA 00:17:17
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith16Core":
+  ≈ 10⁻⁴ ops/ms
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith4Core
+
+# Run progress: 20.00% complete, ETA 00:15:48
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+# Run progress: 25.00% complete, ETA 00:14:33
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith4Core":
+  ≈ 10⁻⁴ ops/ms
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith8Core
+
+# Run progress: 30.00% complete, ETA 00:13:26
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+# Run progress: 35.00% complete, ETA 00:12:13
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith8Core":
+  ≈ 10⁻⁴ ops/ms
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkStreamReader
+
+# Run progress: 40.00% complete, ETA 00:11:07
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+# Run progress: 45.00% complete, ETA 00:10:02
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   1: ≈ 10⁻⁴ ops/ms
+Iteration   2: ≈ 10⁻⁴ ops/ms
+Iteration   3: Memory used after trial: 2 MB
+≈ 10⁻⁴ ops/ms
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkStreamReader":
+  ≈ 10⁻⁴ ops/ms
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkBufferReader
+
+# Run progress: 50.00% complete, ETA 00:08:55
+# Fork: 1 of 2
+# Warmup Iteration   1: 8959.033 ms/op
+Iteration   1: 8682.209 ms/op
+                 p0.00:   8539.603 ms/op
+                 p0.50:   8682.209 ms/op
+                 p0.90:   8824.816 ms/op
+                 p0.95:   8824.816 ms/op
+                 p0.99:   8824.816 ms/op
+                 p0.999:  8824.816 ms/op
+                 p0.9999: 8824.816 ms/op
+                 p1.00:   8824.816 ms/op
+
+Iteration   2: 8468.300 ms/op
+                 p0.00:   8396.997 ms/op
+                 p0.50:   8468.300 ms/op
+                 p0.90:   8539.603 ms/op
+                 p0.95:   8539.603 ms/op
+                 p0.99:   8539.603 ms/op
+                 p0.999:  8539.603 ms/op
+                 p0.9999: 8539.603 ms/op
+                 p1.00:   8539.603 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+8535.409 ms/op
+                 p0.00:   8531.214 ms/op
+                 p0.50:   8535.409 ms/op
+                 p0.90:   8539.603 ms/op
+                 p0.95:   8539.603 ms/op
+                 p0.99:   8539.603 ms/op
+                 p0.999:  8539.603 ms/op
+                 p0.9999: 8539.603 ms/op
+                 p1.00:   8539.603 ms/op
+
+
+# Run progress: 55.00% complete, ETA 00:08:15
+# Fork: 2 of 2
+# Warmup Iteration   1: 9151.971 ms/op
+Iteration   1: 8791.261 ms/op
+                 p0.00:   8774.484 ms/op
+                 p0.50:   8791.261 ms/op
+                 p0.90:   8808.038 ms/op
+                 p0.95:   8808.038 ms/op
+                 p0.99:   8808.038 ms/op
+                 p0.999:  8808.038 ms/op
+                 p0.9999: 8808.038 ms/op
+                 p1.00:   8808.038 ms/op
+
+Iteration   2: 8858.370 ms/op
+                 p0.00:   8841.593 ms/op
+                 p0.50:   8858.370 ms/op
+                 p0.90:   8875.147 ms/op
+                 p0.95:   8875.147 ms/op
+                 p0.99:   8875.147 ms/op
+                 p0.999:  8875.147 ms/op
+                 p0.9999: 8875.147 ms/op
+                 p1.00:   8875.147 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+8866.759 ms/op
+                 p0.00:   8841.593 ms/op
+                 p0.50:   8866.759 ms/op
+                 p0.90:   8891.924 ms/op
+                 p0.95:   8891.924 ms/op
+                 p0.99:   8891.924 ms/op
+                 p0.999:  8891.924 ms/op
+                 p0.9999: 8891.924 ms/op
+                 p1.00:   8891.924 ms/op
+
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkBufferReader":
+  N = 12
+  mean =   8700.385 ±(99.9%) 224.484 ms/op
+
+  Histogram, ms/op:
+    [8300.000, 8350.000) = 0
+    [8350.000, 8400.000) = 1
+    [8400.000, 8450.000) = 0
+    [8450.000, 8500.000) = 0
+    [8500.000, 8550.000) = 4
+    [8550.000, 8600.000) = 0
+    [8600.000, 8650.000) = 0
+    [8650.000, 8700.000) = 0
+    [8700.000, 8750.000) = 0
+    [8750.000, 8800.000) = 1
+    [8800.000, 8850.000) = 4
+
+  Percentiles, ms/op:
+      p(0.0000) =   8396.997 ms/op
+     p(50.0000) =   8791.261 ms/op
+     p(90.0000) =   8886.891 ms/op
+     p(95.0000) =   8891.924 ms/op
+     p(99.0000) =   8891.924 ms/op
+     p(99.9000) =   8891.924 ms/op
+     p(99.9900) =   8891.924 ms/op
+     p(99.9990) =   8891.924 ms/op
+     p(99.9999) =   8891.924 ms/op
+    p(100.0000) =   8891.924 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith16Core
+
+# Run progress: 60.00% complete, ETA 00:07:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 4624.919 ±(99.9%) 6451.903 ms/op
+Iteration   1: 4415.204 ±(99.9%) 690.093 ms/op
+                 p0.00:   4378.853 ms/op
+                 p0.50:   4412.408 ms/op
+                 p0.90:   4454.351 ms/op
+                 p0.95:   4454.351 ms/op
+                 p0.99:   4454.351 ms/op
+                 p0.999:  4454.351 ms/op
+                 p0.9999: 4454.351 ms/op
+                 p1.00:   4454.351 ms/op
+
+Iteration   2: 4541.033 ±(99.9%) 1540.563 ms/op
+                 p0.00:   4462.739 ms/op
+                 p0.50:   4529.848 ms/op
+                 p0.90:   4630.512 ms/op
+                 p0.95:   4630.512 ms/op
+                 p0.99:   4630.512 ms/op
+                 p0.999:  4630.512 ms/op
+                 p0.9999: 4630.512 ms/op
+                 p1.00:   4630.512 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+4420.796 ±(99.9%) 306.079 ms/op
+                 p0.00:   4404.019 ms/op
+                 p0.50:   4420.796 ms/op
+                 p0.90:   4437.574 ms/op
+                 p0.95:   4437.574 ms/op
+                 p0.99:   4437.574 ms/op
+                 p0.999:  4437.574 ms/op
+                 p0.9999: 4437.574 ms/op
+                 p1.00:   4437.574 ms/op
+
+
+# Run progress: 65.00% complete, ETA 00:06:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 4201.295 ±(99.9%) 4079.537 ms/op
+Iteration   1: 3895.110 ±(99.9%) 968.914 ms/op
+                 p0.00:   3854.565 ms/op
+                 p0.50:   3875.537 ms/op
+                 p0.90:   3955.229 ms/op
+                 p0.95:   3955.229 ms/op
+                 p0.99:   3955.229 ms/op
+                 p0.999:  3955.229 ms/op
+                 p0.9999: 3955.229 ms/op
+                 p1.00:   3955.229 ms/op
+
+Iteration   2: 3897.907 ±(99.9%) 192.570 ms/op
+                 p0.00:   3888.120 ms/op
+                 p0.50:   3896.508 ms/op
+                 p0.90:   3909.091 ms/op
+                 p0.95:   3909.091 ms/op
+                 p0.99:   3909.091 ms/op
+                 p0.999:  3909.091 ms/op
+                 p0.9999: 3909.091 ms/op
+                 p1.00:   3909.091 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+3906.295 ±(99.9%) 694.322 ms/op
+                 p0.00:   3862.954 ms/op
+                 p0.50:   3921.674 ms/op
+                 p0.90:   3934.257 ms/op
+                 p0.95:   3934.257 ms/op
+                 p0.99:   3934.257 ms/op
+                 p0.999:  3934.257 ms/op
+                 p0.9999: 3934.257 ms/op
+                 p1.00:   3934.257 ms/op
+
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith16Core":
+  N = 18
+  mean =   4179.391 ±(99.9%) 274.295 ms/op
+
+  Histogram, ms/op:
+    [3800.000, 3850.000) = 0
+    [3850.000, 3900.000) = 5
+    [3900.000, 3950.000) = 3
+    [3950.000, 4000.000) = 1
+    [4000.000, 4050.000) = 0
+    [4050.000, 4100.000) = 0
+    [4100.000, 4150.000) = 0
+    [4150.000, 4200.000) = 0
+    [4200.000, 4250.000) = 0
+    [4250.000, 4300.000) = 0
+    [4300.000, 4350.000) = 0
+    [4350.000, 4400.000) = 1
+    [4400.000, 4450.000) = 4
+    [4450.000, 4500.000) = 2
+    [4500.000, 4550.000) = 1
+    [4550.000, 4600.000) = 0
+    [4600.000, 4650.000) = 1
+
+  Percentiles, ms/op:
+      p(0.0000) =   3854.565 ms/op
+     p(50.0000) =   4167.041 ms/op
+     p(90.0000) =   4539.915 ms/op
+     p(95.0000) =   4630.512 ms/op
+     p(99.0000) =   4630.512 ms/op
+     p(99.9000) =   4630.512 ms/op
+     p(99.9900) =   4630.512 ms/op
+     p(99.9990) =   4630.512 ms/op
+     p(99.9999) =   4630.512 ms/op
+    p(100.0000) =   4630.512 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith4Core
+
+# Run progress: 70.00% complete, ETA 00:05:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 5012.193 ms/op
+Iteration   1: 4468.332 ±(99.9%) 2777.290 ms/op
+                 p0.00:   4328.522 ms/op
+                 p0.50:   4445.962 ms/op
+                 p0.90:   4630.512 ms/op
+                 p0.95:   4630.512 ms/op
+                 p0.99:   4630.512 ms/op
+                 p0.999:  4630.512 ms/op
+                 p0.9999: 4630.512 ms/op
+                 p1.00:   4630.512 ms/op
+
+Iteration   2: 4317.337 ±(99.9%) 3830.065 ms/op
+                 p0.00:   4102.029 ms/op
+                 p0.50:   4328.522 ms/op
+                 p0.90:   4521.460 ms/op
+                 p0.95:   4521.460 ms/op
+                 p0.99:   4521.460 ms/op
+                 p0.999:  4521.460 ms/op
+                 p0.9999: 4521.460 ms/op
+                 p1.00:   4521.460 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+4222.266 ±(99.9%) 2677.461 ms/op
+                 p0.00:   4106.224 ms/op
+                 p0.50:   4173.332 ms/op
+                 p0.90:   4387.242 ms/op
+                 p0.95:   4387.242 ms/op
+                 p0.99:   4387.242 ms/op
+                 p0.999:  4387.242 ms/op
+                 p0.9999: 4387.242 ms/op
+                 p1.00:   4387.242 ms/op
+
+
+# Run progress: 75.00% complete, ETA 00:04:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 4514.469 ±(99.9%) 6020.470 ms/op
+Iteration   1: 4239.043 ±(99.9%) 1837.005 ms/op
+                 p0.00:   4164.944 ms/op
+                 p0.50:   4198.498 ms/op
+                 p0.90:   4353.688 ms/op
+                 p0.95:   4353.688 ms/op
+                 p0.99:   4353.688 ms/op
+                 p0.999:  4353.688 ms/op
+                 p0.9999: 4353.688 ms/op
+                 p1.00:   4353.688 ms/op
+
+Iteration   2: 4464.138 ±(99.9%) 4974.566 ms/op
+                 p0.00:   4257.219 ms/op
+                 p0.50:   4362.076 ms/op
+                 p0.90:   4773.118 ms/op
+                 p0.95:   4773.118 ms/op
+                 p0.99:   4773.118 ms/op
+                 p0.999:  4773.118 ms/op
+                 p0.9999: 4773.118 ms/op
+                 p1.00:   4773.118 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+4465.536 ±(99.9%) 1901.224 ms/op
+                 p0.00:   4345.299 ms/op
+                 p0.50:   4521.460 ms/op
+                 p0.90:   4529.848 ms/op
+                 p0.95:   4529.848 ms/op
+                 p0.99:   4529.848 ms/op
+                 p0.999:  4529.848 ms/op
+                 p0.9999: 4529.848 ms/op
+                 p1.00:   4529.848 ms/op
+
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith4Core":
+  N = 18
+  mean =   4362.775 ±(99.9%) 171.965 ms/op
+
+  Histogram, ms/op:
+    [4100.000, 4150.000) = 2
+    [4150.000, 4200.000) = 3
+    [4200.000, 4250.000) = 0
+    [4250.000, 4300.000) = 1
+    [4300.000, 4350.000) = 3
+    [4350.000, 4400.000) = 3
+    [4400.000, 4450.000) = 1
+    [4450.000, 4500.000) = 0
+    [4500.000, 4550.000) = 3
+    [4550.000, 4600.000) = 0
+    [4600.000, 4650.000) = 1
+    [4650.000, 4700.000) = 0
+    [4700.000, 4750.000) = 0
+
+  Percentiles, ms/op:
+      p(0.0000) =   4102.029 ms/op
+     p(50.0000) =   4349.493 ms/op
+     p(90.0000) =   4644.772 ms/op
+     p(95.0000) =   4773.118 ms/op
+     p(99.0000) =   4773.118 ms/op
+     p(99.9000) =   4773.118 ms/op
+     p(99.9900) =   4773.118 ms/op
+     p(99.9990) =   4773.118 ms/op
+     p(99.9999) =   4773.118 ms/op
+    p(100.0000) =   4773.118 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith8Core
+
+# Run progress: 80.00% complete, ETA 00:03:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 4280.986 ±(99.9%) 2230.039 ms/op
+Iteration   1: 4057.290 ±(99.9%) 998.673 ms/op
+                 p0.00:   4013.949 ms/op
+                 p0.50:   4039.115 ms/op
+                 p0.90:   4118.807 ms/op
+                 p0.95:   4118.807 ms/op
+                 p0.99:   4118.807 ms/op
+                 p0.999:  4118.807 ms/op
+                 p0.9999: 4118.807 ms/op
+                 p1.00:   4118.807 ms/op
+
+Iteration   2: 4075.465 ±(99.9%) 1476.520 ms/op
+                 p0.00:   3984.589 ms/op
+                 p0.50:   4102.029 ms/op
+                 p0.90:   4139.778 ms/op
+                 p0.95:   4139.778 ms/op
+                 p0.99:   4139.778 ms/op
+                 p0.999:  4139.778 ms/op
+                 p0.9999: 4139.778 ms/op
+                 p1.00:   4139.778 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+4018.143 ±(99.9%) 275.896 ms/op
+                 p0.00:   4001.366 ms/op
+                 p0.50:   4022.338 ms/op
+                 p0.90:   4030.726 ms/op
+                 p0.95:   4030.726 ms/op
+                 p0.99:   4030.726 ms/op
+                 p0.999:  4030.726 ms/op
+                 p0.9999: 4030.726 ms/op
+                 p1.00:   4030.726 ms/op
+
+
+# Run progress: 85.00% complete, ETA 00:02:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 4178.925 ±(99.9%) 3716.002 ms/op
+Iteration   1: 3965.015 ±(99.9%) 751.038 ms/op
+                 p0.00:   3917.480 ms/op
+                 p0.50:   3988.783 ms/op
+                 p0.90:   3988.783 ms/op
+                 p0.95:   3988.783 ms/op
+                 p0.99:   3988.783 ms/op
+                 p0.999:  3988.783 ms/op
+                 p0.9999: 3988.783 ms/op
+                 p1.00:   3988.783 ms/op
+
+Iteration   2: 3916.082 ±(99.9%) 220.893 ms/op
+                 p0.00:   3909.091 ms/op
+                 p0.50:   3909.091 ms/op
+                 p0.90:   3930.063 ms/op
+                 p0.95:   3930.063 ms/op
+                 p0.99:   3930.063 ms/op
+                 p0.999:  3930.063 ms/op
+                 p0.9999: 3930.063 ms/op
+                 p1.00:   3930.063 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+3917.480 ±(99.9%) 1709.321 ms/op
+                 p0.00:   3841.982 ms/op
+                 p0.50:   3888.120 ms/op
+                 p0.90:   4022.338 ms/op
+                 p0.95:   4022.338 ms/op
+                 p0.99:   4022.338 ms/op
+                 p0.999:  4022.338 ms/op
+                 p0.9999: 4022.338 ms/op
+                 p1.00:   4022.338 ms/op
+
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkMultiThreadWith8Core":
+  N = 18
+  mean =   3991.579 ±(99.9%) 76.082 ms/op
+
+  Histogram, ms/op:
+    [3800.000, 3825.000) = 0
+    [3825.000, 3850.000) = 1
+    [3850.000, 3875.000) = 0
+    [3875.000, 3900.000) = 1
+    [3900.000, 3925.000) = 3
+    [3925.000, 3950.000) = 1
+    [3950.000, 3975.000) = 0
+    [3975.000, 4000.000) = 3
+    [4000.000, 4025.000) = 4
+    [4025.000, 4050.000) = 2
+    [4050.000, 4075.000) = 0
+    [4075.000, 4100.000) = 0
+    [4100.000, 4125.000) = 2
+    [4125.000, 4150.000) = 1
+    [4150.000, 4175.000) = 0
+
+  Percentiles, ms/op:
+      p(0.0000) =   3841.982 ms/op
+     p(50.0000) =   3995.075 ms/op
+     p(90.0000) =   4120.904 ms/op
+     p(95.0000) =   4139.778 ms/op
+     p(99.0000) =   4139.778 ms/op
+     p(99.9000) =   4139.778 ms/op
+     p(99.9900) =   4139.778 ms/op
+     p(99.9990) =   4139.778 ms/op
+     p(99.9999) =   4139.778 ms/op
+    p(100.0000) =   4139.778 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 11.0.26, OpenJDK 64-Bit Server VM, 11.0.26+4-post-Ubuntu-1ubuntu120.04
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkStreamReader
+
+# Run progress: 90.00% complete, ETA 00:01:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 14042.530 ms/op
+Iteration   1: 10972.299 ms/op
+                 p0.00:   10972.299 ms/op
+                 p0.50:   10972.299 ms/op
+                 p0.90:   10972.299 ms/op
+                 p0.95:   10972.299 ms/op
+                 p0.99:   10972.299 ms/op
+                 p0.999:  10972.299 ms/op
+                 p0.9999: 10972.299 ms/op
+                 p1.00:   10972.299 ms/op
+
+Iteration   2: 11106.517 ms/op
+                 p0.00:   11106.517 ms/op
+                 p0.50:   11106.517 ms/op
+                 p0.90:   11106.517 ms/op
+                 p0.95:   11106.517 ms/op
+                 p0.99:   11106.517 ms/op
+                 p0.999:  11106.517 ms/op
+                 p0.9999: 11106.517 ms/op
+                 p1.00:   11106.517 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+10955.522 ms/op
+                 p0.00:   10955.522 ms/op
+                 p0.50:   10955.522 ms/op
+                 p0.90:   10955.522 ms/op
+                 p0.95:   10955.522 ms/op
+                 p0.99:   10955.522 ms/op
+                 p0.999:  10955.522 ms/op
+                 p0.9999: 10955.522 ms/op
+                 p1.00:   10955.522 ms/op
+
+
+# Run progress: 95.00% complete, ETA 00:00:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 10183.770 ms/op
+Iteration   1: 10133.438 ms/op
+                 p0.00:   10133.438 ms/op
+                 p0.50:   10133.438 ms/op
+                 p0.90:   10133.438 ms/op
+                 p0.95:   10133.438 ms/op
+                 p0.99:   10133.438 ms/op
+                 p0.999:  10133.438 ms/op
+                 p0.9999: 10133.438 ms/op
+                 p1.00:   10133.438 ms/op
+
+Iteration   2: 11425.284 ms/op
+                 p0.00:   11425.284 ms/op
+                 p0.50:   11425.284 ms/op
+                 p0.90:   11425.284 ms/op
+                 p0.95:   11425.284 ms/op
+                 p0.99:   11425.284 ms/op
+                 p0.999:  11425.284 ms/op
+                 p0.9999: 11425.284 ms/op
+                 p1.00:   11425.284 ms/op
+
+Iteration   3: Memory used after trial: 2 MB
+11190.403 ms/op
+                 p0.00:   11190.403 ms/op
+                 p0.50:   11190.403 ms/op
+                 p0.90:   11190.403 ms/op
+                 p0.95:   11190.403 ms/op
+                 p0.99:   11190.403 ms/op
+                 p0.999:  11190.403 ms/op
+                 p0.9999: 11190.403 ms/op
+                 p1.00:   11190.403 ms/op
+
+
+
+Result "com.infrastructure.benchmark.CSVReaderBenchmark.benchmarkStreamReader":
+  N = 6
+  mean =  10963.911 ±(99.9%) 1237.867 ms/op
+
+  Histogram, ms/op:
+    [10000.000, 10125.000) = 0
+    [10125.000, 10250.000) = 1
+    [10250.000, 10375.000) = 0
+    [10375.000, 10500.000) = 0
+    [10500.000, 10625.000) = 0
+    [10625.000, 10750.000) = 0
+    [10750.000, 10875.000) = 0
+    [10875.000, 11000.000) = 2
+    [11000.000, 11125.000) = 1
+    [11125.000, 11250.000) = 1
+    [11250.000, 11375.000) = 0
+    [11375.000, 11500.000) = 1
+    [11500.000, 11625.000) = 0
+    [11625.000, 11750.000) = 0
+    [11750.000, 11875.000) = 0
+
+  Percentiles, ms/op:
+      p(0.0000) =  10133.438 ms/op
+     p(50.0000) =  11039.408 ms/op
+     p(90.0000) =  11425.284 ms/op
+     p(95.0000) =  11425.284 ms/op
+     p(99.0000) =  11425.284 ms/op
+     p(99.9000) =  11425.284 ms/op
+     p(99.9900) =  11425.284 ms/op
+     p(99.9990) =  11425.284 ms/op
+     p(99.9999) =  11425.284 ms/op
+    p(100.0000) =  11425.284 ms/op
+
+
+# Run complete. Total time: 00:17:50
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                    Mode  Cnt      Score      Error   Units
+CSVReaderBenchmark.benchmarkBufferReader                    thrpt    6     ≈ 10⁻⁴             ops/ms
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core           thrpt    6     ≈ 10⁻⁴             ops/ms
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core            thrpt    6     ≈ 10⁻⁴             ops/ms
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core            thrpt    6     ≈ 10⁻⁴             ops/ms
+CSVReaderBenchmark.benchmarkStreamReader                    thrpt    6     ≈ 10⁻⁴             ops/ms
+CSVReaderBenchmark.benchmarkBufferReader                   sample   12   8700.385 ±  224.484   ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.00             sample        8396.997              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.50             sample        8791.261              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.90             sample        8886.891              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.95             sample        8891.924              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.99             sample        8891.924              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.999            sample        8891.924              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p0.9999           sample        8891.924              ms/op
+CSVReaderBenchmark.benchmarkBufferReader:p1.00             sample        8891.924              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core          sample   18   4179.391 ±  274.295   ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.00    sample        3854.565              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.50    sample        4167.041              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.90    sample        4539.915              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.95    sample        4630.512              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.99    sample        4630.512              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.999   sample        4630.512              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p0.9999  sample        4630.512              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith16Core:p1.00    sample        4630.512              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core           sample   18   4362.775 ±  171.965   ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.00     sample        4102.029              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.50     sample        4349.493              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.90     sample        4644.772              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.95     sample        4773.118              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.99     sample        4773.118              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.999    sample        4773.118              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p0.9999   sample        4773.118              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith4Core:p1.00     sample        4773.118              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core           sample   18   3991.579 ±   76.082   ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.00     sample        3841.982              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.50     sample        3995.075              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.90     sample        4120.904              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.95     sample        4139.778              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.99     sample        4139.778              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.999    sample        4139.778              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p0.9999   sample        4139.778              ms/op
+CSVReaderBenchmark.benchmarkMultiThreadWith8Core:p1.00     sample        4139.778              ms/op
+CSVReaderBenchmark.benchmarkStreamReader                   sample    6  10963.911 ± 1237.867   ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.00             sample       10133.438              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.50             sample       11039.408              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.90             sample       11425.284              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.95             sample       11425.284              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.99             sample       11425.284              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.999            sample       11425.284              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p0.9999           sample       11425.284              ms/op
+CSVReaderBenchmark.benchmarkStreamReader:p1.00             sample       11425.284              ms/op

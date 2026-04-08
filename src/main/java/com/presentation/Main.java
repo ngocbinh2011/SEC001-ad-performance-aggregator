@@ -1,10 +1,11 @@
+package com.presentation;
+
 import com.domain.model.CampaignStats;
 import com.domain.repositories.CampaignReader;
 import com.infrastructure.io.reader.BufferedCSVReader;
 import com.infrastructure.io.reader.MultiThreadedCSVReader;
 import com.infrastructure.io.reader.StreamCSVReader;
 import com.infrastructure.io.writer.CSVResultWriter;
-import com.presentation.CommandLineParser;
 import com.usecase.DataAggregator;
 import com.usecase.ResultsGenerator;
 
@@ -33,20 +34,11 @@ public class Main {
 			printUsage();
 			System.exit(1);
 		}
-		
-		// Defaults for testing
-//		String inputFile = parser.getInputFile() != null ? parser.getInputFile() : "ad_data.csv";
-//		String outputDir = parser.getOutputDirectory() != null ? parser.getOutputDirectory() : "results";
-//		String readerType = parser.getReaderType() != null ? parser.getReaderType() : "thread";
-//		int numThreads = parser.getNumThreads() > 0
-//			? parser.getNumThreads()
-//			: Runtime.getRuntime().availableProcessors();
-		
-		String inputFile = "";
-		String outputDir = "output";
-		String readerType = "thread";
-		int numThreads = 16;
-		outputDir += readerType + "_" + numThreads;
+		String inputFile = parser.getInputFile();
+		String outputDir = parser.getOutputDirectory();
+		String readerType = parser.getReaderType();
+		int numThreads = parser.getNumThreads();
+
 		// Validate input file exists
 		if (!new File(inputFile).exists()) {
 			System.out.println("Error: File not found: " + inputFile);

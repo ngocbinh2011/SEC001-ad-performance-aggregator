@@ -21,10 +21,22 @@ I see that multi-threading is already working with synchronized rowHandler, whic
 - Optimize ResultsGenerator with PriorityQUeue size with 10
 - change code Main accept type of read csv (buffer, stream, thread). With option use thread, read args numberThread and pass to MultiThreadedCSVReader-
 - why numThread in MultiThreadedCSVReader 8 is correct, but 16 is wrong?
+- Write code benchmark in folder com.infrastructure.benmark BufferedCSVReader, MultiThreadedCSVReader, StreamCSVReader. I want to benchmark time process, memory usage. Get average in many runs
 
+```angular2html
+ Write README.md, it contain:
+ - Setup instructions  
+   - How to run the program (with maven and docker)
+   - Libraries used  
+   - Processing time for the 1GB file  
+ + Explain structure code clean architecture
+ + Explain how to optimize memory when read file
+ + Explain how to optimize performance with priority queue in ResultsGenerator
+ + Read file benchmark/benchmark.txt and benchmark/jmh_benchmark.txt and analyst effective of 3 csv reader: BufferedCSVReader, StreamCSVReader MultiThreadedCSVReader
+```
 4. Chat GPT 
 - Is there a way to speed up the handle sort section?
-
+- Write a simple code snippet to verify my results, read CSV data from a file, and perform two tests: Top 10 campaigns with the highest CTR and Top 10 campaigns with the lowest CPA. Keep it as simple as possible, using a single file to run the verification test.
 
 3. Gemini
 - I use gemini for reduce copilot quota usage

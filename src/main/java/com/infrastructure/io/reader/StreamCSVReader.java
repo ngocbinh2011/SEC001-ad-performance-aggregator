@@ -41,7 +41,7 @@ public class StreamCSVReader implements CampaignReader {
 				}
 			}
 			// Handle last line if file doesn't end with newline
-			if (!line.isEmpty() && !firstLine) {
+			if (line.length() > 0 && !firstLine) {
 				String row = cleanLine(line);
 				if (!row.isEmpty()) {
 					processRow(row, campaignMap);

@@ -1,0 +1,134 @@
+================================================================================
+CSV Reader Performance Benchmark
+================================================================================
+File: ad_data.csv
+Warmup runs: 2
+Measurement runs: 5
+================================================================================
+
+Benchmarking BufferedCSVReader...
+  Warmup: .. done
+  Measuring: ..... done
+
+Benchmarking StreamCSVReader...
+  Warmup: .. done
+  Measuring: ..... done
+
+Benchmarking MultiThreadedCSVReader (4 threads)...
+  Warmup: .. done
+  Measuring: ..... done
+
+Benchmarking MultiThreadedCSVReader (8 threads)...
+  Warmup: .. done
+  Measuring: ..... done
+
+Benchmarking MultiThreadedCSVReader (16 threads)...
+  Warmup: .. done
+  Measuring: ..... done
+
+DETAILED RESULTS
+================================================================================
+
+BufferedCSVReader
+--------------------------------------------------------------------------------
+Execution Time (ms):
+  Average:        8704.80
+  Min:            8332.00
+  Max:            9206.00
+  Std Dev:        324.26
+Memory Usage (MB):
+  Average:        0.00
+  Std Dev:        0.00
+  Avg Peak:       3.20
+Raw Data (ms / MB / Peak MB):
+  Run 1: 9206 ms / 0 MB / 4 MB
+  Run 2: 8332 ms / 0 MB / 3 MB
+  Run 3: 8664 ms / 0 MB / 3 MB
+  Run 4: 8916 ms / 0 MB / 3 MB
+  Run 5: 8406 ms / 0 MB / 3 MB
+
+StreamCSVReader
+--------------------------------------------------------------------------------
+Execution Time (ms):
+  Average:        10086.60
+  Min:            9616.00
+  Max:            10516.00
+  Std Dev:        321.50
+Memory Usage (MB):
+  Average:        0.00
+  Std Dev:        0.00
+  Avg Peak:       3.00
+Raw Data (ms / MB / Peak MB):
+  Run 1: 9616 ms / 0 MB / 3 MB
+  Run 2: 10516 ms / 0 MB / 3 MB
+  Run 3: 9833 ms / 0 MB / 3 MB
+  Run 4: 10194 ms / 0 MB / 3 MB
+  Run 5: 10274 ms / 0 MB / 3 MB
+
+MultiThreadedCSVReader (4 threads)
+--------------------------------------------------------------------------------
+Execution Time (ms):
+  Average:        4342.60
+  Min:            4023.00
+  Max:            4780.00
+  Std Dev:        291.09
+Memory Usage (MB):
+  Average:        0.00
+  Std Dev:        0.00
+  Avg Peak:       3.00
+Raw Data (ms / MB / Peak MB):
+  Run 1: 4780 ms / 0 MB / 3 MB
+  Run 2: 4364 ms / 0 MB / 3 MB
+  Run 3: 4023 ms / 0 MB / 3 MB
+  Run 4: 4518 ms / 0 MB / 3 MB
+  Run 5: 4028 ms / 0 MB / 3 MB
+
+MultiThreadedCSVReader (8 threads)
+--------------------------------------------------------------------------------
+Execution Time (ms):
+  Average:        3387.00
+  Min:            3260.00
+  Max:            3633.00
+  Std Dev:        127.87
+Memory Usage (MB):
+  Average:        0.00
+  Std Dev:        0.00
+  Avg Peak:       3.00
+Raw Data (ms / MB / Peak MB):
+  Run 1: 3361 ms / 0 MB / 3 MB
+  Run 2: 3633 ms / 0 MB / 3 MB
+  Run 3: 3333 ms / 0 MB / 3 MB
+  Run 4: 3348 ms / 0 MB / 3 MB
+  Run 5: 3260 ms / 0 MB / 3 MB
+
+MultiThreadedCSVReader (16 threads)
+--------------------------------------------------------------------------------
+Execution Time (ms):
+  Average:        3377.80
+  Min:            3314.00
+  Max:            3595.00
+  Std Dev:        108.79
+Memory Usage (MB):
+  Average:        0.00
+  Std Dev:        0.00
+  Avg Peak:       3.00
+Raw Data (ms / MB / Peak MB):
+  Run 1: 3314 ms / 0 MB / 3 MB
+  Run 2: 3327 ms / 0 MB / 3 MB
+  Run 3: 3333 ms / 0 MB / 3 MB
+  Run 4: 3595 ms / 0 MB / 3 MB
+  Run 5: 3320 ms / 0 MB / 3 MB
+
+COMPARISON TABLE
+====================================================================================================
+Reader                                   |   Avg Time (ms) |    Std Dev (ms) | Avg Memory (MB) |   Avg Peak (MB)
+----------------------------------------------------------------------------------------------------
+BufferedCSVReader                        |         8704.80 |          324.26 |            0.00 |            3.20
+StreamCSVReader                          |        10086.60 |          321.50 |            0.00 |            3.00
+MultiThreadedCSVReader (4 threads)       |         4342.60 |          291.09 |            0.00 |            3.00
+MultiThreadedCSVReader (8 threads)       |         3387.00 |          127.87 |            0.00 |            3.00
+MultiThreadedCSVReader (16 threads)      |         3377.80 |          108.79 |            0.00 |            3.00
+====================================================================================================
+
+FASTEST READER: MultiThreadedCSVReader (16 threads)
+Average execution time: 3377.80 ms
