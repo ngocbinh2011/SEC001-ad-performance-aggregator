@@ -159,6 +159,15 @@ diff --strip-trailing-cr correct_results/top10_ctr.csv <output_dir>/top10_ctr.cs
 | **MultiThreaded (8 threads)** | **3.39s** | 3.26s | 3.63s | 128ms | 3.0 MB |
 | **MultiThreaded (16 threads)** | **3.38s** | 3.31s | 3.60s | 109ms | 3.0 MB |
 
+**Note:**
+<p>
+In this problem, the overall processing time is primarily determined by how efficiently file I/O is implemented, especially how the CSV file is read and aggregated into the HashMap.
+
+Once the data has been fully loaded and aggregated, the remaining processing steps (such as computing metrics, sorting, and generating the final top-k outputs) are relatively lightweight.
+
+As a result, the performance differences between reader types mainly come from their file reading and parsing strategies, while the post-processing time is generally similar and negligible in comparison.
+</p>
+
 **Key Insights:**
 - Multi-threaded approach is **2.5x faster** than single-threaded
 - 8-16 threads provide optimal performance on modern CPUs
