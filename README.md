@@ -7,6 +7,10 @@ A high-performance Java application for processing large CSV datasets (~1GB) con
 As a result, some parts of the implementation may not be as fully refined or clean as they could be under normal development conditions.
 This was a deliberate trade-off to focus on the core technical requirements of the challenge.
 </p>
+
+<p style="color:#ff0062;font-size:19px; font-weight: bold;">
+<strong>Important:</strong> You should run with args param `--reader thread` for better performance (details in CLI Arguments & Performance Metrics sections)
+</p>
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -64,7 +68,7 @@ This was a deliberate trade-off to focus on the core technical requirements of t
 
 ### 1. Running with Maven
 
-#### Default (BufferedCSVReader)
+#### Default (MultiThreadedCSVReader)
 ```bash
 mvn exec:java -Dexec.mainClass="com.presentation.Main" \
   -Dexec.args="--input ad_data.csv --output results/"
@@ -101,14 +105,20 @@ java -cp target/ad-performance-aggregator-1.0-SNAPSHOT.jar \
   com.presentation.Main --input ad_data.csv --output results/
 ```
 
+### 4. Compare with correct result
+```bash
+diff --strip-trailing-cr correct_results/top10_ctr.csv <output_dir>/top10_ctr.csv
+```
+
+
 ### CLI Arguments
 
-| Argument | Description | Default | Example |
-|----------|-------------|---------|---------|
+| Argument | Description | Default      | Example |
+|----------|-------------|--------------|---------|
 | `--input` | Path to CSV file | **Required** | `--input ad_data.csv` |
-| `--output` | Output directory | `results/` | `--output ./output/` |
-| `--reader` | Reader type: `buffer`, `stream`, `thread` | `buffer` | `--reader thread` |
-| `--threads` | Number of threads (for `thread` reader) | CPU cores | `--threads 8` |
+| `--output` | Output directory | `results/`   | `--output ./output/` |
+| `--reader` | Reader type: `buffer`, `stream`, `thread` | `thread`     | `--reader thread` |
+| `--threads` | Number of threads (for `thread` reader) | CPU cores    | `--threads 8` |
 
 
 ## 📚 Libraries Used

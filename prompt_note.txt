@@ -1,0 +1,83 @@
+1. ChatGPT first research:
+ - Read the README file above and summarize the requirements, suggesting some solutions.
+ - How to optimize performance and memory usage? Suggest some solution
+ - Your solution must handle large datasets efficiently with good performance and memory optimization. I want optimize solution to handle large datasets, please suggest some solution
+ - how to read large file csv effectively?
+ - i want chunk processing and multithreading
+ - how to seek in offset line and skip n line?
+ - Performance of RandomAccessFile.seek() in java?
+ - how to partition csv file by chunk for multi processing?
+ - Analyzing several edge cases?
+
+2. Github copilot
+
+```angular2html
+Read the README.md file and write a function to read the input filename. I want to process the data using a HashMap instead of saving each line individually, and use the HashMap to summarize the results. Must follow this instruction
+ - Clean, readable code — meaningful names, consistent style, no dead code or commented-out blocks
+ - Error handling — handle missing files, malformed rows, and edge cases gracefully
+```
+
+```angular2html
+I want cleaner code: Separate the classes, each function has its own task, and reading the file and handling the row is done by a different function, so that benchmarks can be used to replace various file reading methods.
+```
+
+```angular2html
+Read three classes: MultiThreadReader (reads files in chunks by thread), SingleLineBufferReader (reads files line by line), and StreamCSVReader (reads files using byte streams). Apply this to provide multiple ways to read files instead of relying solely on bufferreaders. I will benchmark based on these different methods; for multi-threading, handle it separately to ensure consistency (each thread should have its own statistics and aggregate them upon completion).
+```
+
+```angular2html
+I see that multi-threading is already working with synchronized rowHandler, which can create multiple row handlers per request. I want to modify the CSVReader interface to readFile and return a HashMap<String, CampaignStats>. Remove the synchronization from MultiThreadedCSVReader to ensure benchmarks are performed within the same context.
+```
+
+3. ChatGPT
+Is there a way to speed up the handle sort section?
+optimize processRow, dont create string for each row, use string pool?
+
+4. Copilot
+
+- Optimize ResultsGenerator with PriorityQUeue size with 10
+- change code Main accept type of read csv (buffer, stream, thread). With option use thread, read args numberThread and pass to MultiThreadedCSVReader-
+
+
+5. ChatGPT
+- Write a simple code snippet to verify my results, read CSV data from a file, and perform two tests: Top 10 campaigns with the highest CTR and Top 10 campaigns with the lowest CPA. Keep it as simple as possible, using a single file to run the verification test.
+ - not print, export with folder csv file?
+ - output is wrong format: CTR and total_spend, fix now
+
+
+6. Copilot
+- Something seems wrong here. in MultiThreadedReader, If the number of threads is 8, everything works fine, but if it's 16, the output is incorrect.
+
+7. Copilot
+But if currentPos can > end without encountering \n, shouldn't that be handled by another thread?
+
+8. Gemini
+Read the project and analyze it to see if there are any other ways to optimize performance and memory usage.
+
+9. ChatGPT:
+ Write a benchmark showing how this file is read, and suggest some methods.
+ How to run benchmark with JMH?
+ Where do I add the build plugin?
+ Explain some annotations @BenchmarkMode(Mode.Throughput)@OutputTimeUnit(TimeUnit.MILLISECONDS)@Fork(1) // Only 1 JVM process @Warmup(iterations = 1) @Measurement(iterations = 1)?
+ Write Dockerfile
+10. Copilot:
+- Write code JMH benchmark with in folder com.infrastructure.benmark BufferedCSVReader, MultiThreadedCSVReader, StreamCSVReader. I want to benchmark time process, memory usage. Get average in many runs
+- Write code custome with console benchmark
+
+
+
+```angular2html
+ Write README.md, it contain:
+ - Setup instructions
+   - How to run the program (with maven and docker)
+   - Libraries used
+   - Processing time for the 1GB file
+ + Explain structure code clean architecture
+ + Explain how to optimize memory when read file
+ + Explain how to optimize performance with priority queue in ResultsGenerator
+ + Read file benchmark/benchmark.txt and benchmark/jmh_benchmark.txt and analyst effective of 3 csv reader: BufferedCSVReader, StreamCSVReader MultiThreadedCSVReader
+```
+
+11. ChatGpt
+Write a file named `promp.md` describing the prompts I used to handle this requirement. Note that they are presented sequentially to follow my thought process and problem-solving steps. Also, note that I skipped some other prompts during coding and debugging to avoid being too verbose.
+

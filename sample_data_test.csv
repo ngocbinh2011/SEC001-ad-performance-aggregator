@@ -1,4 +1,4 @@
-campaign_id,date,impressions,clicks,cost,conversions
+campaign_id,date,impressions,clicks,spend,conversions
 CMP025,2025-04-18,3653,60,64.29,2
 CMP020,2025-05-03,24465,764,1394.62,42
 CMP019,2025-02-05,7214,236,135.93,21

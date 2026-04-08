@@ -7,8 +7,8 @@ package com.presentation;
 public class CommandLineParser {
 	private String inputFile;
 	private String outputDirectory;
-	private String readerType = "buffer"; // default reader type
-	private int numThreads = Runtime.getRuntime().availableProcessors(); // default threads
+	private String readerType = "thread"; // default reader type
+	private int numThreads = 8; // default threads
 	
 	/**
 	 * Parses command-line arguments.
