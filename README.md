@@ -51,7 +51,7 @@ This was a deliberate trade-off to focus on the core technical requirements of t
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd ad-performance-aggregator
+   cd <project_folder>
    ```
 
 2. **Download the dataset**
