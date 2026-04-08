@@ -65,6 +65,7 @@ This was a deliberate trade-off to focus on the core technical requirements of t
 ---
 
 ## 🏃 How to Run
+- <p style="color:#ff0033;"> Note: Please replace ad_data.csv with sample_data_test.csv for testing, and use ad_data.csv for performance benchmarking.
 
 ### 1. Running with Maven
 
